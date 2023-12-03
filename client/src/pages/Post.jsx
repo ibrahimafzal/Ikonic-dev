@@ -20,7 +20,7 @@ const Post = () => {
     return (
         <div className="my-5">
             <h1 className='text-center mb-4'>All Users Posts</h1>
-            <div className='d-flex gap-3 flex-wrap'>
+            <div className='d-flex gap-3 flex-wrap justify-content-center'>
                 {
                     postList?.map((post, idx) => (
                         <div key={idx}>

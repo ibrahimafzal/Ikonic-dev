@@ -5,13 +5,16 @@
    -moz-osx-font-smoothing: grayscale;
  }
 
- /* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+ p, td, button, li, span, label, input, textarea {
+  font-size: 20px !important;
+ }
 
  .bg-navbar {
    background-color: #010A35;
+ }
+
+ .ms-6 {
+  margin-left: 7rem !important;
  }
 
  .navbar-logo {

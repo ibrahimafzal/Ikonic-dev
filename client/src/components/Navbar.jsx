@@ -27,7 +27,7 @@ const Navbar = () => {
                     </button>
                     <Link to={"/"} className="navbar-brand d-flex align-items-center" href="#">
                         <img className='navbar-logo' src={IKONIC} alt="" />
-                        <p className='fs-6 mb-0'>IKONIC</p>
+                        <p className='mb-0'>IKONIC</p>
                     </Link>
 
                 </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
                                 </li>
                             </ul>
                         ) : (
-                            <div className='mb-0 text-white d-flex gap-2'>Welcome,
+                            <div className='mb-0 text-white d-flex gap-2 mt-4 mt-sm-0'><span>Welcome,</span>
                                 <div className="dropdown">
                                     <p className="dropdown-toggle text-primary text-capitalize mb-0 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                         {authState?.user?.firstname + " " + authState?.user?.lastname}

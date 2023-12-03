@@ -75,7 +75,7 @@ useEffect(() => {
 
   return (
     <div className='container my-5'>
-      <h3 className="mb-4 fw-bold text-center">{postId !== undefined ? "Edit" : "Add"} Post</h3>
+      <h1 className="mb-4 fw-bold text-center">{postId !== undefined ? "Edit" : "Add"} Post</h1>
 
       <div>
         <form action="" onSubmit={formik.handleSubmit} >
@@ -129,7 +129,7 @@ useEffect(() => {
           </div>
 
           {/* Text Editor */}
-          <h6 className='fw-bold ms-1 mb-0'>Enter Description:</h6>
+          <label className='fw-bold ms-1 mb-0 mt-2'>Enter Description:</label>
           <textarea
             className='form-control'
             rows={8}

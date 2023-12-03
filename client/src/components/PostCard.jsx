@@ -9,10 +9,10 @@ const PostCard = ({ post }) => {
         <div>
             <div className="card">
                 <div className="card-header p-0">
-                    <img src={IMAGE} alt="rover" />
+                    <img src={IMAGE} alt="mern stack" style={{maxWidth: "100%", height: "auto"}} />
                 </div>
                 <div className="card-body">
-                    <span className="tag tag-teal mb-2">{post?.author}</span>
+                    <span className="tag tag-teal mb-2 fs-6">{post?.author}</span>
                     <h4 className='text-capitalize'>
                         {post?.title.substring(0,20)}...
                     </h4>

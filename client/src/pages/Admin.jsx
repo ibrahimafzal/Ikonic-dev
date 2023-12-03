@@ -108,11 +108,11 @@ const Admin = () => {
   }, [])
 
   return (
-    <div className='ms-5 my-5'>
-      <div className='row'>
+    <div className='mx-0 mx-sm-5 my-5'>
+      <div className='mx-1 mx-sm-3'>
         {/* <AdminSidebar /> */}
-        <div className="col-2 shadow-lg">
-          <nav className='d-flex flex-column gap-2'>
+        <div className="col-12 d-flex justify-content-center">
+          <nav className='d-flex gap-2'>
             <button
               onClick={handleAllUsersClick}
               className='btn btn-primary'
@@ -129,7 +129,7 @@ const Admin = () => {
         </div>
         {/* all users */}
         {activeSection === "All Users" && (
-          <div className="col-9 ms-5 shadow-lg">
+          <div className="col-12 mt-5">
             <table className="table">
               <thead className="table-dark">
                 <tr>
@@ -150,7 +150,7 @@ const Admin = () => {
                     </td>
                     <td>{user?.email}</td>
                     <td>{user?.mobile}</td>
-                    <td>{user?.role}</td>
+                    <td className='text-capitalize'>{user?.role}</td>
                     <td className='d-flex align-items-center'>
                       <button type="button" onClick={() => handleUserSelection(user)} className="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <AiOutlineEdit className='fs-5 edit-delete cursor-pointer' />
@@ -199,7 +199,7 @@ const Admin = () => {
 
         {/* all posts */}
         {activeSection === "All Posts" && (
-          <div className="col-9 ms-5 shadow-lg">
+          <div className="col-12 mt-5">
             <table className="table">
               <thead className="table-dark">
                 <tr>
